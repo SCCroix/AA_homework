@@ -1,6 +1,6 @@
 class Stack
   attr_reader :stack
-  
+
   def initialize
     # create ivar to store stack here!
     @stack = []
@@ -24,11 +24,33 @@ class Stack
   end
 end
 
-stack = Stack.new
-stack.push("a")
-stack.push("b")
-stack.push("c")
-stack.push("d")
-stack.pop
-stack.pop
-p stack.peek
+# stack = Stack.new
+# stack.push("a")
+# stack.push("b")
+# stack.push("c")
+# stack.push("d")
+# stack.pop
+# stack.pop
+# p stack.peek
+class Queue
+  attr_reader = []
+
+  def initialize
+    @queue = []
+  end
+
+  def enqueue(el)
+    #will add to the back of the queue
+    @queue.unshift(el)
+    nil
+  end
+
+  def dequeue
+    @queue.pop
+    nil
+  end
+
+  def peek
+    @queue.last
+  end
+end
